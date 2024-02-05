@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  padding: 2.5em;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  gap: 24px;
+  color: gray;
+}
+.hero {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.leftcard {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+}
+
+.imgcontainer img {
+  width: 100%;
+}
+.rightcard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+}
+.rightcard h1 {
+  color: hsl(35, 77%, 62%);
+  font-size: 2rem;
+}
+.rightcard-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  line-height: 24px;
+}
+.rightcard-item h3 {
+  font-size: 15px;
+}
+.rightcard-item-info {
+  color: gray;
+  font-size: 12px;
+}
+.rightcard-item {
+  border-bottom: 1px solid white;
+  padding-bottom: 16px;
+}
+.rightcard-item:last-child {
+  border-bottom: transparent;
+}
+.leftbottom {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.leftbottom h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.lefttext {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  color: gray;
+}
+.lefttext p {
+  line-height: 1.5;
+}
+.leftbottom button {
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  background-color: hsl(5, 85%, 63%);
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+.smallcards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.smallcard-item {
+  display: flex;
+  gap: 10px;
+}
+.smallimgcontainer img {
+  width: 100px;
+}
+.smallcard-content {
+  display: flex;
+  flex-direction: column;
+  padding-block: 8px;
+  justify-content: space-between;
+}
+.smallcard-info {
+  color: grey;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 1em;
+  }
+  .navbar {
+  }
+  .navbar ul {
+    display: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .smallcards {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgcontainer {
+    width: 100%;
+    object-fit: cover;
+  }
+  .rightcard {
+    gap: 20px;
+  }
+
+  .leftbottom {
+    flex-direction: column;
+  }
+  .smallcards {
+    align-items: flex-start;
+  }
+  .smallimgcontainer {
+    width: 100px;
+  }
+  .smallimgcontainer img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    
+   
+  }
+}
