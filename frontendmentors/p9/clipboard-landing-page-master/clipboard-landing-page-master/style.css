@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Bai Jamjuree", sans-serif;
+
+  min-height: 150vh;
+
+  .container {
+    background-image: url(images/bg-header-desktop.png),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5324511201839882) 21%,
+        rgba(159, 171, 178, 0.8125814133435973) 100%
+      );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.textcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.textcontent h1 {
+  color: hsl(210, 10%, 33%);
+  font-size: 2rem;
+}
+.smalltext {
+  width: 650px;
+  color: gray;
+}
+.btn {
+  display: flex;
+  gap: 1rem;
+}
+.btn button {
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  color: white;
+  cursor: pointer;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.ios {
+  box-shadow: 0 0 0px hsl(171, 66%, 44%);
+  background-color: hsl(171, 66%, 44%);
+}
+.mac {
+  box-shadow: 0 0 0px hsl(233, 100%, 69%);
+  background-color: hsl(233, 100%, 69%);
+}
+
+@media (max-width: 425px) {
+  body {
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  .top {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .top h1 {
+    font-size: 1.75rem;
+  }
+  .smalltext {
+    width: auto;
+    font-size: 14px;
+  }
+  .btn {
+    flex-direction: column;
+    width: 100%;
+  }
+}
