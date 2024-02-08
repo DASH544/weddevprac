@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Offwhite: hsl(0, 0%, 94%);
+  --Lightgrey: hsl(0, 0%, 86%);
+  --Smokeygrey: hsl(0, 1%, 44%);
+  --Offblack: hsl(0, 0%, 8%);
+  --Purple: hsl(259, 100%, 65%);
+  --Lightred: hsl(0, 100%, 67%);
+}
+body {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Lightgrey);
+  padding: 100px;
+}
+
+.top {
+  display: flex;
+  gap: 25px;
+  padding: 10px;
+}
+.app {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  border-radius: 1rem 1rem 10rem 1rem;
+  width: 600px;
+}
+label {
+  color: var(--Smokeygrey);
+  font-size: 14px;
+}
+input {
+  padding: 12px;
+  width: 100px;
+ 
+}
+span {
+  color: var(--Purple);
+}
+.l1,
+.l2,
+.l3 {
+  display: flex;
+  flex-direction: column;
+}
+.submitblock {
+  display: flex;
+  align-items: center;
+}
+input::placeholder,input {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.text p {
+  font-size: 4.5rem;
+  font-weight: 800;
+  font-style: italic;
+}
+form
+{
+    display: flex;
+}
+hr {
+  width: 100%;
+}
+#mysubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Purple);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  .top {
+    width: 300px;
+    gap: 10px;
+    
+  }
+  .text p {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: italic;
+  }
+  .app {
+    width: 360px;
+    padding: 20px;
+    border-radius: 1rem 1rem 6rem 1rem;
+  }
+  input {
+    width: 100%;
+  }
+  input::placeholder {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+}
