@@ -19,6 +19,8 @@ body {
   display: grid;
   place-items: center;
   font-size: 15px;
+  gap: 0;
+  color: white;
   min-height: 100vh;
 }
 .container {
@@ -26,12 +28,15 @@ body {
   padding: 2.5rem;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
   border-radius: 10px;
   width: 700px;
 }
+button:hover
+{
+    cursor: pointer;
+}
 .input input {
-  text-align: end;
   width: 100%;
   font-size: 15px;
   font-weight: 800;
@@ -52,6 +57,18 @@ body {
   flex-direction: column;
   gap: 35px;
   width: 100%;
+}
+
+input {
+  outline: none;
+  border-radius: 4px;
+  text-align: end;
+}
+input:hover {
+  cursor: pointer;
+}
+input:focus {
+  border: solid 2px var(--Strongcyan);
 }
 .rightcard {
   display: flex;
@@ -99,6 +116,10 @@ span {
   width: 100%;
   background-color: var(--Strongcyan);
 }
+.reset-btn:hover {
+
+  opacity: 0.8;
+}
 
 .tipsection {
   display: flex;
@@ -108,12 +129,17 @@ span {
 .tipsection button {
   padding: 8px 20px;
   width: 80px;
+  margin-bottom: 10px;
   border: none;
   border-radius: 4px;
   font-size: 15px;
   font-weight: 800;
   background-color: var(--Verydarkcyan);
   color: white;
+}
+.tipsection button:hover {
+  background-color: var(--Strongcyan);
+  transition: 0.5s ease-in-out;
 }
 #custom {
   padding: 8px 4px;
@@ -136,4 +162,21 @@ span {
   background-position: 10px center;
   padding-inline: 15px;
   padding-block: 10px;
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: auto;
+    padding: 1.5rem;
+  }
+  .tipsection button,
+  #custom {
+    width: 120px;
+  }
+  #custom::placeholder {
+    font-size: 17px;
+  }
+  .rightcard {
+    gap: 28px;
+  }
 }
