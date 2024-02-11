@@ -1,0 +1,10 @@
+const btn5=document.getElementsByClassName("tip5");
+const btn10=document.getElementsByClassName("tip10");
+const btn15=document.getElementsByClassName("tip15");
+const btn25=document.getElementsByClassName("tip25");
+const btn50=document.getElementsByClassName("tip50");
+const billinput=document.getElementsById("bills"); 
+const form=document.getElementsById("form1"); 
+const resetbtn=document.getElementById("reset-btn");
+const numpeople=document.getElementById("people");
+const totalamount=document.getElementById("output1");
