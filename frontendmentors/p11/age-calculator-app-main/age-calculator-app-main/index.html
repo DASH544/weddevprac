@@ -36,14 +36,17 @@
       
           <label for="day">Day</label>
           <input type="number" placeholder="DD" id="day" />
+          <p id="invalid"></p>
         </div>
         <div class="l2">
           <label for="day">Month</label>
           <input type="number" placeholder="MM" id="month" />
+          <p id="invalid2"></p>
         </div>
         <div class="l3">
           <label for="year">Year</label>
           <input type="number" placeholder="YYYY" id="year" />
+          <p id="invalid3"></p>
         </div>
      
       </div>
@@ -51,12 +54,12 @@
    
       <div class="submitblock">
         <hr>
-          <button id="mysubmit"><img src="assets/images/icon-arrow.svg" alt=""></button>
+          <button onclick="calc()" id="mysubmit"><img src="assets/images/icon-arrow.svg" alt=""></button>
       </div>
       <div class="text">
-        <p id="years"><span id="years">--</span>years</p>
-        <p id="years"><span id="months">--</span> months</p>
-        <p id="years"><span id="days">--</span> days</p>
+        <p><span id="years">--</span> years</p>
+        <p><span id="months">--</span> months</p>
+        <p><span id="days">--</span> days</p>
       </div>
     </section>
     <script src="index.js"></script>
