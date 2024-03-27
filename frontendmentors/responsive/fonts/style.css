@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.font-px {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
+.pixels {
+  background-color: black;
+  color: whitesmoke;
+  width: 50%;
+  height: 50%;
+}
+.viewport {
+  background-color: green;
+  width: 100vmin;
+}
